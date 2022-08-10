@@ -1,0 +1,31 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""This is model for message schema"""
+type MessageModel {
+  _id: ID!
+  from: String!
+  msg: String!
+  roomID: String!
+}
+
+type Mutation {
+  addMessage(from: String!, msg: String!, roomID: String!): MessageModel!
+  createRoom(roomName: String!): RoomModel!
+}
+
+type Query {
+  getMessages(roomID: String!): [MessageModel]!
+  getRoom(roomName: String!): RoomModel!
+}
+
+"""This is model for room schema"""
+type RoomModel {
+  _id: ID!
+  roomName: String!
+}
+
+type Subscription {
+  subscribeMessage(roomID: String!): MessageModel!
+}

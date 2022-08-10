@@ -1,0 +1,28 @@
+@use "chat";
+@use "auth";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  overflow: hidden;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+input,
+textarea,
+button {
+  background: none;
+  outline: none;
+  border: none;
+}
+button {
+  cursor: pointer;
+}

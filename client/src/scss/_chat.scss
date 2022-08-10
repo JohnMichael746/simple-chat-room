@@ -1,0 +1,9 @@
+.chat-box {
+  width: 50%;
+  height: calc(100vh - 50px);
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
